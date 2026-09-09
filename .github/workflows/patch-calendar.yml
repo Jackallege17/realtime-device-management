@@ -1,0 +1,33 @@
+name: Patch sports calendar
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-calendar.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: sports-calendar
+      - name: Add confirmed Bahrain GP in Malaysia race
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('sports-calendar.ics')
+          s=p.read_text(encoding='utf-8')
+          uid='f1-2026-bahrain-in-malaysia-race@jackallege17-sports'
+          if uid not in s:
+              block='''BEGIN:VEVENT\nUID:f1-2026-bahrain-in-malaysia-race@jackallege17-sports\nDTSTAMP:20260909T234535Z\nSUMMARY:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race\nDTSTART:20261004T070000Z\nDTEND:20261004T093000Z\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 5 days before\nTRIGGER:-P5D\nEND:VALARM\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 1 day before\nTRIGGER:-P1D\nEND:VALARM\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 2 hours before\nTRIGGER:-PT2H\nEND:VALARM\nEND:VEVENT\n'''
+              marker='BEGIN:VEVENT\nUID:umd-2026-10-10-ohio-state@jackallege17-sports'
+              s=s.replace(marker,block+marker)
+              p.write_text(s,encoding='utf-8',newline='')
+      - name: Commit if changed
+        run: |
+          git config user.name 'sports-calendar-bot'
+          git config user.email 'sports-calendar-bot@users.noreply.github.com'
+          git add sports-calendar.ics
+          git diff --cached --quiet || git commit -m 'Add confirmed 2026 Bahrain GP in Malaysia race'
+          git push origin sports-calendar
