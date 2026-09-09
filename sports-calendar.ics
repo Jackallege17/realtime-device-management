@@ -823,24 +823,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umich-2026-11-28-ohio-state@jackallege17-sports
-DTSTAMP:20260909T035800Z
-SUMMARY:〽️ Michigan Football — at Ohio State — TBA
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
+DTSTAMP:20260909T065251Z
+SUMMARY:〽️ Michigan Football — at Ohio State
+DTSTART:20261128T170000Z
+DTEND:20261128T210000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Ohio State — TBA — 5 days before
+DESCRIPTION:〽️ Michigan Football — at Ohio State — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Ohio State — TBA — 1 day before
+DESCRIPTION:〽️ Michigan Football — at Ohio State — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Ohio State — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:〽️ Michigan Football — at Ohio State — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
