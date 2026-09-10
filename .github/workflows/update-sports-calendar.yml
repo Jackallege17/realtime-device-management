@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
 
+# Regenerate the subscribed ICS whenever the authoritative builder changes.
 jobs:
   build:
     runs-on: ubuntu-latest
