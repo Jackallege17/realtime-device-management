@@ -31,3 +31,4 @@ jobs:
           git add sports-calendar.ics
           git diff --cached --quiet || git commit -m 'Add confirmed 2026 Bahrain GP in Malaysia race'
           git push origin sports-calendar
+# Maintenance trigger: 2026-09-12
