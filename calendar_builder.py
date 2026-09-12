@@ -6,11 +6,15 @@ def alarms(s,day=False):
  for t,d in [('-P5D','5 days before'),('-P1D','1 day before'),('PT9H' if day else '-PT2H','Today at 9:00 AM' if day else '2 hours before')]: x += ['BEGIN:VALARM','ACTION:DISPLAY',f'DESCRIPTION:{s} — {d}',f'TRIGGER:{t}','END:VALARM']
  return x
 def timed(uid,s,t,m=120):
- d=datetime.strptime(t,'%Y%m%dT%H%MZ').replace(tzinfo=timezone.utc); e=d+timedelta(minutes=m); E.append((d,['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART:{d:%Y%m%dT%H%M%SZ}',f'DTEND:{e:%Y%m%dT%H%M%SZ}']+alarms(s)+['END:VEVENT']))
+ d=datetime.strptime(t,'%Y%m%dT%H%MZ').replace(tzinfo=timezone.utc)
+ if d<=datetime.now(timezone.utc): return
+ e=d+timedelta(minutes=m); E.append((d,['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART:{d:%Y%m%dT%H%M%SZ}',f'DTEND:{e:%Y%m%dT%H%M%SZ}']+alarms(s)+['END:VEVENT']))
 def day(uid,s,y):
- d=datetime.strptime(y,'%Y%m%d').date(); E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
-# F1: Formula1.com official race starts; race only.
-for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('bahrain-in-malaysia','Bahrain GP in Malaysia (Sepang)','20261004T0700Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
+ d=datetime.strptime(y,'%Y%m%d').date()
+ if d<datetime.now(ZoneInfo('America/Detroit')).date(): return
+ E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
+# F1: Formula1.com official 2026 race starts; race only.
+for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z')]: timed(u,s,t,240)
 for y,slug,s in [('20260926','iowa','vs Iowa'),('20261003','minnesota','at Minnesota'),('20261017','penn-state','vs Penn State'),('20261024','indiana','vs Indiana'),('20261031','rutgers','at Rutgers'),('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
