@@ -12,12 +12,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: sports-calendar
-      - name: Apply confirmed Tottenham festive fixture changes
+      - name: Apply confirmed calendar corrections
         shell: python
         run: |
           from pathlib import Path
           p = Path('sports-calendar.ics')
           s = p.read_text(encoding='utf-8')
+
+          # Confirmed Tottenham festive fixture changes.
           changes = {
               'spurs-2026-12-30-brighton-and-hove-albion@jackallege17-sports': ('20261230T200000Z', '20261230T221500Z', '20261229T193000Z', '20261229T214500Z'),
               'spurs-2027-01-02-manchester-city@jackallege17-sports': ('20270102T150000Z', '20270102T171500Z', '20270103T163000Z', '20270103T184500Z'),
@@ -34,12 +36,25 @@ jobs:
               if block2 == block and f'DTSTART:{new_start}' not in block:
                   raise RuntimeError(f'Unexpected current time for {uid}')
               s = s[:start] + block2 + s[end:]
+
+          # Formula1.com official 2026 calendar has Bahrain at Sakhir in April;
+          # there is no October Bahrain GP at Sepang. Remove the stale event if present.
+          bad_uid = 'f1-2026-bahrain-in-malaysia-race@jackallege17-sports'
+          marker = f'UID:{bad_uid}'
+          if marker in s:
+              uid_pos = s.index(marker)
+              event_start = s.rfind('BEGIN:VEVENT', 0, uid_pos)
+              event_end = s.index('END:VEVENT', uid_pos) + len('END:VEVENT')
+              while event_end < len(s) and s[event_end] in '\r\n':
+                  event_end += 1
+              s = s[:event_start] + s[event_end:]
+
           p.write_text(s, encoding='utf-8', newline='')
       - name: Commit if changed
         run: |
           git config user.name 'sports-calendar-bot'
           git config user.email 'sports-calendar-bot@users.noreply.github.com'
           git add sports-calendar.ics
-          git diff --cached --quiet || git commit -m 'Update Tottenham festive fixtures'
+          git diff --cached --quiet || git commit -m 'Maintain sports calendar'
           git push origin sports-calendar
-# Maintenance trigger: 2026-09-12 festive update
+# Maintenance trigger: 2026-09-12 official F1 reconciliation
