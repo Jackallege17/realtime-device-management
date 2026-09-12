@@ -250,28 +250,6 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:f1-2026-bahrain-in-malaysia-race@jackallege17-sports
-DTSTAMP:20260912T000324Z
-SUMMARY:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race
-DTSTART:20261004T070000Z
-DTEND:20261004T093000Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🏎️ F1 — Bahrain GP in Malaysia (Sepang) — Race — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:umich-2026-10-03-minnesota@jackallege17-sports
 DTSTAMP:20260912T000324Z
 SUMMARY:〽️ Michigan Football — at Minnesota — TBA
