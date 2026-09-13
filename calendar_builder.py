@@ -12,12 +12,10 @@ def alarms(s,day=False):
 
 def timed(uid,s,t,m=120):
  d=datetime.strptime(t,'%Y%m%dT%H%MZ').replace(tzinfo=timezone.utc)
- if d<=datetime.now(timezone.utc): return
  e=d+timedelta(minutes=m); E.append((d,['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART:{d:%Y%m%dT%H%M%SZ}',f'DTEND:{e:%Y%m%dT%H%M%SZ}']+alarms(s)+['END:VEVENT']))
 
 def day(uid,s,y):
  d=datetime.strptime(y,'%Y%m%d').date()
- if d<datetime.now(ZoneInfo('America/Detroit')).date(): return
  E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
 
 # F1: Formula1.com official 2026 race starts; race only.
