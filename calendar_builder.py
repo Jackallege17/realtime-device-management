@@ -19,7 +19,7 @@ def day(uid,s,y):
  E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
 
 # F1: Formula1.com official 2026 race starts; race only.
-for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
+for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('bahrain-in-malaysia','Bahrain GP in Malaysia (Sepang)','20261004T0700Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z')]: timed(u,s,t,240)
@@ -43,7 +43,7 @@ for r in [('20261107','15:00','Leeds United',0),('20261121','15:00','Ipswich Tow
 # This makes rebuilds additive/update-only: historical events and externally maintained
 # events (for example Team Spirit matches) cannot disappear merely because time passed.
 # Explicitly invalid events may be removed only after authoritative verification.
-INVALID_UIDS={'f1-2026-bahrain-in-malaysia-race@jackallege17-sports'}
+INVALID_UIDS=set()
 p=Path('sports-calendar.ics')
 existing={}
 if p.exists():
