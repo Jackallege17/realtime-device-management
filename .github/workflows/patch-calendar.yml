@@ -16,8 +16,16 @@ jobs:
         shell: python
         run: |
           from pathlib import Path
+          import re
+
           p = Path('sports-calendar.ics')
           s = p.read_text(encoding='utf-8')
+
+          # Never delete an existing event just because it is now in the past.
+          # The calendar is also a historical record, so every pre-existing UID
+          # must survive this maintenance pass unless a future workflow explicitly
+          # removes a confirmed erroneous/duplicate/cancelled event.
+          original_uids = set(re.findall(r'^UID:(.+)$', s, flags=re.MULTILINE))
 
           # Confirmed Tottenham festive fixture changes. Keep the original UID
           # when a fixture date changes so subscribed calendars update in place.
@@ -72,6 +80,11 @@ END:VEVENT
                   raise RuntimeError('Missing insertion anchor after Sepang race date')
               s = s.replace(anchor, event + anchor, 1)
 
+          current_uids = set(re.findall(r'^UID:(.+)$', s, flags=re.MULTILINE))
+          missing_uids = original_uids - current_uids
+          if missing_uids:
+              raise RuntimeError(f'Maintenance would delete existing events: {sorted(missing_uids)}')
+
           p.write_text(s, encoding='utf-8', newline='')
       - name: Commit if changed
         run: |
@@ -80,4 +93,3 @@ END:VEVENT
           git add sports-calendar.ics
           git diff --cached --quiet || git commit -m 'Maintain sports calendar'
           git push origin sports-calendar
-# Maintenance trigger: preserve history and current official F1 reconciliation
