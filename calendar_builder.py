@@ -19,6 +19,7 @@ def day(uid,s,y):
  E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
 
 # F1: Formula1.com official 2026 race starts; race only.
+# Bahrain was held at Sakhir on Apr 12. There is no 2026 Sepang/Malaysia round.
 for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
 
 # Michigan
