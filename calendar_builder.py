@@ -27,8 +27,8 @@ for y,slug,s in [('20260926','iowa','vs Iowa'),('20261003','minnesota','at Minne
 timed('umich-2026-11-28-ohio-state@jackallege17-sports','〽️ Michigan Football — at Ohio State','20261128T1700Z',240)
 
 # Maryland
-for u,s,t in [('umd-2026-09-12-uconn@jackallege17-sports','🐢 Maryland Football — at UConn','20260912T1930Z'),('umd-2026-09-19-virginia-tech@jackallege17-sports','🐢 Maryland Football — vs Virginia Tech','20260919T2330Z')]: timed(u,s,t,240)
-for y,slug,s in [('20260926','ucla','vs UCLA'),('20261003','nebraska','at Nebraska'),('20261010','ohio-state','at Ohio State'),('20261017','rutgers','vs Rutgers'),('20261031','illinois','vs Illinois'),('20261107','purdue','at Purdue'),('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
+for u,s,t in [('umd-2026-09-12-uconn@jackallege17-sports','🐢 Maryland Football — at UConn','20260912T1930Z'),('umd-2026-09-19-virginia-tech@jackallege17-sports','🐢 Maryland Football — vs Virginia Tech','20260919T2330Z'),('umd-2026-09-26-ucla@jackallege17-sports','🐢 Maryland Football — vs UCLA','20260926T1730Z')]: timed(u,s,t,240)
+for y,slug,s in [('20261003','nebraska','at Nebraska'),('20261010','ohio-state','at Ohio State'),('20261017','rutgers','vs Rutgers'),('20261031','illinois','vs Illinois'),('20261107','purdue','at Purdue'),('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
 
 # Tottenham men's first team: confirmed broadcast changes where announced; later PL fixtures provisional.
 UK=ZoneInfo('Europe/London')
