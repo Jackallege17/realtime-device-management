@@ -43,6 +43,8 @@ for r in [('20261107','15:00','Leeds United',0),('20261121','15:00','Ipswich Tow
 # This makes rebuilds additive/update-only: historical events and externally maintained
 # events (for example Team Spirit matches) cannot disappear merely because time passed.
 # Explicitly invalid events may be removed only after authoritative verification.
+# Formula1.com's official 2026 calendar has Bahrain at Sakhir in April and no Sepang race;
+# keep the previously introduced Malaysia/Sepang UID blocked so it cannot reappear.
 INVALID_UIDS={'spurs-2026-12-30-brighton-hove-albion@jackallege17-sports','spurs-2027-01-02-manchester-city@jackallege17-sports','f1-2026-bahrain-in-malaysia-race@jackallege17-sports'}
 p=Path('sports-calendar.ics')
 existing={}
