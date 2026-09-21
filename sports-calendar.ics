@@ -251,46 +251,46 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umich-2026-10-03-minnesota@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:〽️ Michigan Football — at Minnesota — TBA
-DTSTART;VALUE=DATE:20261003
-DTEND;VALUE=DATE:20261004
+DTSTAMP:20260921T214500Z
+SUMMARY:〽️ Michigan Football — at Minnesota
+DTSTART:20261003T160000Z
+DTEND:20261003T200000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Minnesota — TBA — 5 days before
+DESCRIPTION:〽️ Michigan Football — at Minnesota — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Minnesota — TBA — 1 day before
+DESCRIPTION:〽️ Michigan Football — at Minnesota — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Minnesota — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:〽️ Michigan Football — at Minnesota — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umd-2026-10-03-nebraska@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:🐢 Maryland Football — at Nebraska — TBA
-DTSTART;VALUE=DATE:20261003
-DTEND;VALUE=DATE:20261004
+DTSTAMP:20260921T214500Z
+SUMMARY:🐢 Maryland Football — at Nebraska
+DTSTART:20261003T200000Z
+DTEND:20261004T000000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Nebraska — TBA — 5 days before
+DESCRIPTION:🐢 Maryland Football — at Nebraska — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Nebraska — TBA — 1 day before
+DESCRIPTION:🐢 Maryland Football — at Nebraska — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Nebraska — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:🐢 Maryland Football — at Nebraska — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
