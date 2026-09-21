@@ -426,28 +426,6 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spurs-2026-10-24-chelsea@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Chelsea (Premier League)
-DTSTART:20261024T163000Z
-DTEND:20261024T184500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:umich-2026-10-24-indiana@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:〽️ Michigan Football — vs Indiana — TBA
@@ -470,6 +448,28 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2026-10-24-chelsea@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Chelsea (Premier League)
+DTSTART:20261024T163000Z
+DTEND:20261024T184500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Chelsea (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2026-united-states-race@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:🏎️ F1 — United States GP — Race
@@ -488,28 +488,6 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — United States GP — Race — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2026-10-31-crystal-palace@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Crystal Palace (Premier League)
-DTSTART:20261031T173000Z
-DTEND:20261031T194500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 2 hours before
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -558,6 +536,28 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2026-10-31-crystal-palace@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Crystal Palace (Premier League)
+DTSTART:20261031T173000Z
+DTEND:20261031T194500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Crystal Palace (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2026-mexico-race@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:🏎️ F1 — Mexico City GP — Race
@@ -576,28 +576,6 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Mexico City GP — Race — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2026-11-07-leeds-united@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Leeds United (Premier League)
-DTSTART:20261107T150000Z
-DTEND:20261107T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 2 hours before
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -643,6 +621,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🐢 Maryland Football — at Purdue — TBA — Today at 9:00 AM
 TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-11-07-leeds-united@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Leeds United (Premier League)
+DTSTART:20261107T150000Z
+DTEND:20261107T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Leeds United (Premier League) — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -712,28 +712,6 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spurs-2026-11-21-ipswich-town@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Ipswich Town (Premier League)
-DTSTART:20261121T150000Z
-DTEND:20261121T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:umich-2026-11-21-ucla@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:〽️ Michigan Football — vs UCLA — TBA
@@ -778,6 +756,28 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2026-11-21-ipswich-town@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Ipswich Town (Premier League)
+DTSTART:20261121T150000Z
+DTEND:20261121T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Ipswich Town (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2026-las-vegas-race@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:🏎️ F1 — Las Vegas GP — Race
@@ -796,28 +796,6 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Las Vegas GP — Race — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2026-11-28-sunderland@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Sunderland (Premier League)
-DTSTART:20261128T150000Z
-DTEND:20261128T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 2 hours before
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -841,6 +819,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🐢 Maryland Football — vs Penn State — TBA — Today at 9:00 AM
 TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-11-28-sunderland@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Sunderland (Premier League)
+DTSTART:20261128T150000Z
+DTEND:20261128T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Sunderland (Premier League) — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1020,6 +1020,50 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2026-12-26-afc-bournemouth@jackallege17-sports
+DTSTAMP:20260921T072334Z
+SUMMARY:⚽ Tottenham — vs AFC Bournemouth (Premier League)
+DTSTART:20261226T150000Z
+DTEND:20261226T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-12-30-brighton-hove-albion@jackallege17-sports
+DTSTAMP:20260921T072334Z
+SUMMARY:⚽ Tottenham — vs Brighton & Hove Albion (Premier League)
+DTSTART:20261229T193000Z
+DTEND:20261229T214500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:spurs-2026-12-30-brighton@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:⚽ Tottenham — vs Brighton & Hove Albion (Premier League)
@@ -1043,10 +1087,10 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:spurs-2027-01-02-manchester-city@jackallege17-sports
-DTSTAMP:20260921T120000Z
+DTSTAMP:20260921T072334Z
 SUMMARY:⚽ Tottenham — at Manchester City (Premier League)
-DTSTART:20270102T150000Z
-DTEND:20270102T171500Z
+DTSTART:20270103T163000Z
+DTEND:20270103T184500Z
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Tottenham — at Manchester City (Premier League) — 5 days before
@@ -1065,10 +1109,10 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:spurs-2027-01-06-fulham@jackallege17-sports
-DTSTAMP:20260921T120000Z
+DTSTAMP:20260921T072334Z
 SUMMARY:⚽ Tottenham — at Fulham (Premier League)
-DTSTART:20270106T200000Z
-DTEND:20270106T221500Z
+DTSTART:20270106T193000Z
+DTEND:20270106T214500Z
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Tottenham — at Fulham (Premier League) — 5 days before
@@ -1218,6 +1262,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2027-02-20-brighton-hove-albion@jackallege17-sports
+DTSTAMP:20260921T072334Z
+SUMMARY:⚽ Tottenham — at Brighton & Hove Albion (Premier League)
+DTSTART:20270220T150000Z
+DTEND:20270220T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:spurs-2027-02-27-liverpool@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:⚽ Tottenham — vs Liverpool (Premier League)
@@ -1242,6 +1308,28 @@ END:VEVENT
 BEGIN:VEVENT
 UID:spurs-2027-03-03-bournemouth@jackallege17-sports
 DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at AFC Bournemouth (Premier League)
+DTSTART:20270303T200000Z
+DTEND:20270303T221500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-03-03-afc-bournemouth@jackallege17-sports
+DTSTAMP:20260921T072334Z
 SUMMARY:⚽ Tottenham — at AFC Bournemouth (Premier League)
 DTSTART:20270303T200000Z
 DTEND:20270303T221500Z
