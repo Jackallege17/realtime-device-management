@@ -1020,55 +1020,11 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spurs-2026-12-26-afc-bournemouth@jackallege17-sports
-DTSTAMP:20260921T072334Z
-SUMMARY:⚽ Tottenham — vs AFC Bournemouth (Premier League)
-DTSTART:20261226T150000Z
-DTEND:20261226T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs AFC Bournemouth (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2026-12-30-brighton-hove-albion@jackallege17-sports
-DTSTAMP:20260921T072334Z
+UID:spurs-2026-12-30-brighton@jackallege17-sports
+DTSTAMP:20260921T072425Z
 SUMMARY:⚽ Tottenham — vs Brighton & Hove Albion (Premier League)
 DTSTART:20261229T193000Z
 DTEND:20261229T214500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2026-12-30-brighton@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Brighton & Hove Albion (Premier League)
-DTSTART:20261230T200000Z
-DTEND:20261230T221500Z
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Tottenham — vs Brighton & Hove Albion (Premier League) — 5 days before
@@ -1262,28 +1218,6 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spurs-2027-02-20-brighton-hove-albion@jackallege17-sports
-DTSTAMP:20260921T072334Z
-SUMMARY:⚽ Tottenham — at Brighton & Hove Albion (Premier League)
-DTSTART:20270220T150000Z
-DTEND:20270220T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Brighton & Hove Albion (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:spurs-2027-02-27-liverpool@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:⚽ Tottenham — vs Liverpool (Premier League)
@@ -1308,28 +1242,6 @@ END:VEVENT
 BEGIN:VEVENT
 UID:spurs-2027-03-03-bournemouth@jackallege17-sports
 DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at AFC Bournemouth (Premier League)
-DTSTART:20270303T200000Z
-DTEND:20270303T221500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at AFC Bournemouth (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-03-03-afc-bournemouth@jackallege17-sports
-DTSTAMP:20260921T072334Z
 SUMMARY:⚽ Tottenham — at AFC Bournemouth (Premier League)
 DTSTART:20270303T200000Z
 DTEND:20270303T221500Z
