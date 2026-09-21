@@ -34,7 +34,8 @@ for y,slug,s in [('20261003','nebraska','at Nebraska'),('20261010','ohio-state',
 UK=ZoneInfo('Europe/London')
 def sp(y,h,o,home=True,c='Premier League',uid_y=None):
  d=datetime.strptime(y+h,'%Y%m%d%H:%M').replace(tzinfo=UK).astimezone(timezone.utc)
- slug=o.lower().replace('&','and').replace(' ','-').replace("'",'').replace('.','').replace('brighton-and-hove-albion','brighton-hove-albion')
+ slug=o.lower().replace('&','and').replace(' ','-').replace("'",'').replace('.','')
+ slug=slug.replace('afc-bournemouth','bournemouth').replace('brighton-and-hove-albion','brighton')
  uy=uid_y or y; timed(f'spurs-{uy[:4]}-{uy[4:6]}-{uy[6:]}-{slug}@jackallege17-sports',f"⚽ Tottenham — {'vs' if home else 'at'} {o} ({c})",d.strftime('%Y%m%dT%H%MZ'),135)
 for r in [('20260912','17:30','Everton',1,'Premier League'),('20260915','20:00','Liverpool',0,'Carabao Cup'),('20260919','12:30','Aston Villa',1,'Premier League'),('20261010','17:30','Manchester United',0,'Premier League'),('20261019','20:00','Coventry City',1,'Premier League'),('20261024','17:30','Chelsea',0,'Premier League'),('20261031','17:30','Crystal Palace',1,'Premier League')]: sp(*r)
 for r in [('20261107','15:00','Leeds United',0),('20261121','15:00','Ipswich Town',1),('20261128','15:00','Sunderland',0),('20261202','20:00','Fulham',1),('20261205','15:00','Arsenal',1),('20261212','15:00','Hull City',0),('20261219','15:00','Liverpool',0),('20261226','15:00','AFC Bournemouth',1),('20270116','15:00','Leeds United',1),('20270123','15:00','Crystal Palace',0),('20270130','15:00','Sunderland',1),('20270206','15:00','Ipswich Town',0),('20270210','20:00','Manchester City',1),('20270220','15:00','Brighton & Hove Albion',0),('20270227','15:00','Liverpool',1),('20270303','20:00','AFC Bournemouth',0),('20270313','15:00','Nottingham Forest',1),('20270320','15:00','Everton',0),('20270410','15:00','Brentford',1),('20270417','15:00','Newcastle United',0),('20270424','15:00','Hull City',1),('20270501','15:00','Arsenal',0),('20270508','15:00','Chelsea',1),('20270515','15:00','Coventry City',0),('20270523','15:00','Manchester United',1),('20270530','16:00','Aston Villa',0)]: sp(*r)
@@ -45,10 +46,14 @@ sp('20270103','16:30','Manchester City',0,'Premier League','20270102')
 sp('20270106','19:30','Fulham',0,'Premier League')
 
 # Preserve every existing event unless this builder has a replacement with the same UID.
-# This makes rebuilds additive/update-only: historical events and externally maintained
-# events (for example Team Spirit matches) cannot disappear merely because time passed.
-# Explicitly invalid events may be removed only after authoritative verification.
-INVALID_UIDS={'f1-2026-bahrain-in-malaysia-race@jackallege17-sports'}
+# Explicitly invalid or accidentally duplicated events are removed after verification.
+INVALID_UIDS={
+ 'f1-2026-bahrain-in-malaysia-race@jackallege17-sports',
+ 'spurs-2026-12-26-afc-bournemouth@jackallege17-sports',
+ 'spurs-2026-12-30-brighton-hove-albion@jackallege17-sports',
+ 'spurs-2027-02-20-brighton-hove-albion@jackallege17-sports',
+ 'spurs-2027-03-03-afc-bournemouth@jackallege17-sports',
+}
 p=Path('sports-calendar.ics')
 existing={}
 if p.exists():
@@ -58,29 +63,20 @@ if p.exists():
   uid=next((line[4:] for line in block if line.startswith('UID:')),None)
   if uid and uid not in INVALID_UIDS: existing[uid]=block
 
-def uid_of(block):
- return next(line[4:] for line in block if line.startswith('UID:'))
-
-def semantic(block):
- # DTSTAMP is bookkeeping, not a schedule change.
- return '\n'.join(line for line in block if not line.startswith('DTSTAMP:'))
-
+def uid_of(block): return next(line[4:] for line in block if line.startswith('UID:'))
+def semantic(block): return '\n'.join(line for line in block if not line.startswith('DTSTAMP:'))
 def start_key(block):
  line=next((x for x in block if x.startswith('DTSTART')),None)
  if not line: return datetime.max.replace(tzinfo=timezone.utc)
  val=line.split(':',1)[1]
- if 'VALUE=DATE' in line:
-  return datetime.strptime(val,'%Y%m%d').replace(tzinfo=timezone.utc)
+ if 'VALUE=DATE' in line: return datetime.strptime(val,'%Y%m%d').replace(tzinfo=timezone.utc)
  return datetime.strptime(val,'%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc)
 
 merged=dict(existing)
 for _,block in E:
  uid=uid_of(block)
- if uid in existing and semantic(existing[uid])==semantic(block):
-  merged[uid]=existing[uid]
- else:
-  merged[uid]=block
-
+ if uid in existing and semantic(existing[uid])==semantic(block): merged[uid]=existing[uid]
+ else: merged[uid]=block
 blocks=sorted(merged.values(),key=start_key)
 out=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Jackallege17//Sports Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:Sports — F1 / Spirit / Michigan / Maryland / Tottenham','X-WR-TIMEZONE:America/Detroit','REFRESH-INTERVAL;VALUE=DURATION:PT1H','X-PUBLISHED-TTL:PT1H']
 for b in blocks: out += b
