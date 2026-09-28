@@ -295,24 +295,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umd-2026-10-10-ohio-state@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:🐢 Maryland Football — at Ohio State — TBA
-DTSTART;VALUE=DATE:20261010
-DTEND;VALUE=DATE:20261011
+DTSTAMP:20260929T120000Z
+SUMMARY:🐢 Maryland Football — at Ohio State
+DTSTART:20261010T201500Z
+DTEND:20261011T001500Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Ohio State — TBA — 5 days before
+DESCRIPTION:🐢 Maryland Football — at Ohio State — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Ohio State — TBA — 1 day before
+DESCRIPTION:🐢 Maryland Football — at Ohio State — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — at Ohio State — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:🐢 Maryland Football — at Ohio State — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
