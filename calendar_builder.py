@@ -18,8 +18,12 @@ def day(uid,s,y):
  d=datetime.strptime(y,'%Y%m%d').date()
  E.append((datetime.combine(d,datetime.min.time(),tzinfo=timezone.utc),['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{STAMP}',f'SUMMARY:{s}',f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{d+timedelta(days=1):%Y%m%d}']+alarms(s,True)+['END:VEVENT']))
 
-# F1: Formula1.com official 2026 race starts; race only.
+# F1: Formula1.com official 2026 full calendar/start-times; race only.
+# Do not add provisional/non-calendar events such as the invalid Sepang Bahrain entry.
 for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaijan','Azerbaijan GP','20260926T1100Z'),('singapore','Singapore GP','20261011T1200Z'),('united-states','United States GP','20261025T2000Z'),('mexico','Mexico City GP','20261101T2000Z'),('brazil','São Paulo GP','20261108T1700Z'),('las-vegas','Las Vegas GP','20261122T0400Z'),('qatar','Qatar GP','20261129T1600Z'),('abu-dhabi','Abu Dhabi GP','20261206T1300Z')]: timed(f'f1-2026-{slug}-race@jackallege17-sports',f'🏎️ F1 — {name} — Race',t,150)
+
+# Team Spirit CS2: only confirmed opponent + date + start time.
+timed('spirit-2026-10-03-shinden@jackallege17-sports','🐉 Team Spirit — vs ShindeN (ESL Pro League Season 24)','20261003T0900Z',180)
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z'),('umich-2026-09-26-iowa@jackallege17-sports','〽️ Michigan Football — vs Iowa','20260926T1930Z'),('umich-2026-10-03-minnesota@jackallege17-sports','〽️ Michigan Football — at Minnesota','20261003T1600Z')]: timed(u,s,t,240)
@@ -27,8 +31,8 @@ for y,slug,s in [('20261017','penn-state','vs Penn State'),('20261024','indiana'
 timed('umich-2026-11-28-ohio-state@jackallege17-sports','〽️ Michigan Football — at Ohio State','20261128T1700Z',240)
 
 # Maryland
-for u,s,t in [('umd-2026-09-12-uconn@jackallege17-sports','🐢 Maryland Football — at UConn','20260912T1930Z'),('umd-2026-09-19-virginia-tech@jackallege17-sports','🐢 Maryland Football — vs Virginia Tech','20260919T2330Z'),('umd-2026-09-26-ucla@jackallege17-sports','🐢 Maryland Football — vs UCLA','20260926T1730Z'),('umd-2026-10-03-nebraska@jackallege17-sports','🐢 Maryland Football — at Nebraska','20261003T2000Z')]: timed(u,s,t,240)
-for y,slug,s in [('20261010','ohio-state','at Ohio State'),('20261017','rutgers','vs Rutgers'),('20261031','illinois','vs Illinois'),('20261107','purdue','at Purdue'),('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
+for u,s,t in [('umd-2026-09-12-uconn@jackallege17-sports','🐢 Maryland Football — at UConn','20260912T1930Z'),('umd-2026-09-19-virginia-tech@jackallege17-sports','🐢 Maryland Football — vs Virginia Tech','20260919T2330Z'),('umd-2026-09-26-ucla@jackallege17-sports','🐢 Maryland Football — vs UCLA','20260926T1730Z'),('umd-2026-10-03-nebraska@jackallege17-sports','🐢 Maryland Football — at Nebraska','20261003T2000Z'),('umd-2026-10-10-ohio-state@jackallege17-sports','🐢 Maryland Football — at Ohio State','20261010T2015Z')]: timed(u,s,t,240)
+for y,slug,s in [('20261017','rutgers','vs Rutgers'),('20261031','illinois','vs Illinois'),('20261107','purdue','at Purdue'),('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
 
 # Tottenham men's first team: confirmed broadcast changes where announced; later PL fixtures provisional.
 UK=ZoneInfo('Europe/London')
