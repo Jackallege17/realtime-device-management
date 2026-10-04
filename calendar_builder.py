@@ -25,6 +25,7 @@ for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaija
 # Team Spirit CS2: only confirmed opponent + date + start time.
 timed('spirit-2026-10-03-shinden@jackallege17-sports','🐉 Team Spirit — vs ShindeN (ESL Pro League Season 24)','20261003T1130Z',180)
 timed('spirit-2026-10-04-parivision@jackallege17-sports','🐉 Team Spirit — vs PARIVISION (ESL Pro League Season 24)','20261004T0900Z',180)
+timed('spirit-2026-10-05-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24)','20261005T1600Z',180)
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z'),('umich-2026-09-26-iowa@jackallege17-sports','〽️ Michigan Football — vs Iowa','20260926T1930Z'),('umich-2026-10-03-minnesota@jackallege17-sports','〽️ Michigan Football — at Minnesota','20261003T1600Z')]: timed(u,s,t,240)
