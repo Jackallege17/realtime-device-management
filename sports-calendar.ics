@@ -449,24 +449,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umd-2026-10-17-rutgers@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:🐢 Maryland Football — vs Rutgers — TBA
-DTSTART;VALUE=DATE:20261017
-DTEND;VALUE=DATE:20261018
+DTSTAMP:20261005T203621Z
+SUMMARY:🐢 Maryland Football — vs Rutgers
+DTSTART:20261017T163000Z
+DTEND:20261017T203000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Rutgers — TBA — 5 days before
+DESCRIPTION:🐢 Maryland Football — vs Rutgers — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Rutgers — TBA — 1 day before
+DESCRIPTION:🐢 Maryland Football — vs Rutgers — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Rutgers — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:🐢 Maryland Football — vs Rutgers — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
