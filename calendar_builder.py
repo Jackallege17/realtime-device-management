@@ -29,7 +29,8 @@ timed('spirit-2026-10-05-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z'),('umich-2026-09-26-iowa@jackallege17-sports','〽️ Michigan Football — vs Iowa','20260926T1930Z'),('umich-2026-10-03-minnesota@jackallege17-sports','〽️ Michigan Football — at Minnesota','20261003T1600Z')]: timed(u,s,t,240)
-for y,slug,s in [('20261017','penn-state','vs Penn State'),('20261024','indiana','vs Indiana'),('20261031','rutgers','at Rutgers'),('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
+timed('umich-2026-10-17-penn-state@jackallege17-sports','〽️ Michigan Football — vs Penn State','20261017T1930Z',240)
+for y,slug,s in [('20261024','indiana','vs Indiana'),('20261031','rutgers','at Rutgers'),('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
 timed('umich-2026-11-28-ohio-state@jackallege17-sports','〽️ Michigan Football — at Ohio State','20261128T1700Z',240)
 
 # Maryland
