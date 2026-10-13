@@ -426,28 +426,6 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spirit-2026-10-10-mouz@jackallege17-sports
-DTSTAMP:20261010T005806Z
-SUMMARY:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final)
-DTSTART:20261010T170000Z
-DTEND:20261010T200000Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:spurs-2026-10-10-manchester-united@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:⚽ Tottenham — at Manchester United (Premier League)
@@ -466,6 +444,28 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Tottenham — at Manchester United (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spirit-2026-10-10-mouz@jackallege17-sports
+DTSTAMP:20261010T005806Z
+SUMMARY:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final)
+DTSTART:20261010T170000Z
+DTEND:20261010T200000Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24 — Semi-final) — 2 hours before
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -1460,204 +1460,6 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:spurs-2027-03-20-everton@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Everton (Premier League)
-DTSTART:20270320T150000Z
-DTEND:20270320T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-04-10-brentford@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Brentford (Premier League)
-DTSTART:20270410T140000Z
-DTEND:20270410T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-04-17-newcastle-united@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Newcastle United (Premier League)
-DTSTART:20270417T140000Z
-DTEND:20270417T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-04-24-hull-city@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Hull City (Premier League)
-DTSTART:20270424T140000Z
-DTEND:20270424T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-05-01-arsenal@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Arsenal (Premier League)
-DTSTART:20270501T140000Z
-DTEND:20270501T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-05-08-chelsea@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Chelsea (Premier League)
-DTSTART:20270508T140000Z
-DTEND:20270508T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-05-15-coventry-city@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Coventry City (Premier League)
-DTSTART:20270515T140000Z
-DTEND:20270515T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-05-23-manchester-united@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — vs Manchester United (Premier League)
-DTSTART:20270523T140000Z
-DTEND:20270523T161500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:spurs-2027-05-30-aston-villa@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:⚽ Tottenham — at Aston Villa (Premier League)
-DTSTART:20270530T150000Z
-DTEND:20270530T171500Z
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 2 hours before
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:f1-2027-bahrain-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Bahrain GP — Race — TBA
@@ -1678,6 +1480,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Bahrain GP — Race — TBA — Today at 9:00 AM
 TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-03-20-everton@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Everton (Premier League)
+DTSTART:20270320T150000Z
+DTEND:20270320T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Everton (Premier League) — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1727,6 +1551,28 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2027-04-10-brentford@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Brentford (Premier League)
+DTSTART:20270410T140000Z
+DTEND:20270410T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Brentford (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2027-japan-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Japanese GP — Race — TBA
@@ -1747,6 +1593,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Japanese GP — Race — TBA — Today at 9:00 AM
 TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-04-17-newcastle-united@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Newcastle United (Premier League)
+DTSTART:20270417T140000Z
+DTEND:20270417T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Newcastle United (Premier League) — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1773,6 +1641,50 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2027-04-24-hull-city@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Hull City (Premier League)
+DTSTART:20270424T140000Z
+DTEND:20270424T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Hull City (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-05-01-arsenal@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Arsenal (Premier League)
+DTSTART:20270501T140000Z
+DTEND:20270501T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Arsenal (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2027-miami-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Miami GP — Race — TBA
@@ -1796,6 +1708,50 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spurs-2027-05-08-chelsea@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Chelsea (Premier League)
+DTSTART:20270508T140000Z
+DTEND:20270508T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Chelsea (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-05-15-coventry-city@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Coventry City (Premier League)
+DTSTART:20270515T140000Z
+DTEND:20270515T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Coventry City (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2027-canada-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Canadian GP — Race — TBA
@@ -1816,6 +1772,50 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Canadian GP — Race — TBA — Today at 9:00 AM
 TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-05-23-manchester-united@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — vs Manchester United (Premier League)
+DTSTART:20270523T140000Z
+DTEND:20270523T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Manchester United (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2027-05-30-aston-villa@jackallege17-sports
+DTSTAMP:20260921T120000Z
+SUMMARY:⚽ Tottenham — at Aston Villa (Premier League)
+DTSTART:20270530T150000Z
+DTEND:20270530T171500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Aston Villa (Premier League) — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1957,6 +1957,72 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:umich-2027-buffalo@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:〽️ Michigan Football — vs Buffalo — TBA
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:umich-2027-texas@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:〽️ Michigan Football — at Texas — TBA
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — at Texas — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — at Texas — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — at Texas — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:umd-2027-james-madison@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:🐢 Maryland Football — vs James Madison — TBA
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2027-italy-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Italian GP — Race — TBA
@@ -1980,6 +2046,50 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:umich-2027-eastern-michigan@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:〽️ Michigan Football — vs Eastern Michigan — TBA
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:umd-2027-youngstown-state@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:🐢 Maryland Football — vs Youngstown State — TBA
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f1-2027-spain-race@jackallege17-sports
 DTSTAMP:20261008T204000Z
 SUMMARY:🏎️ F1 — Spanish (Madrid) GP — Race — TBA
@@ -1999,6 +2109,28 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Spanish (Madrid) GP — Race — TBA — Today at 9:00 AM
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:umd-2027-baylor@jackallege17-sports
+DTSTAMP:20261009T161232Z
+SUMMARY:🐢 Maryland Football — vs Baylor — TBA
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — Today at 9:00 AM
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
@@ -2206,138 +2338,6 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:🏎️ F1 — Abu Dhabi GP — Race — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umich-2027-buffalo@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:〽️ Michigan Football — vs Buffalo — TBA
-DTSTART;VALUE=DATE:20270828
-DTEND;VALUE=DATE:20270829
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Buffalo — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umich-2027-texas@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:〽️ Michigan Football — at Texas — TBA
-DTSTART;VALUE=DATE:20270904
-DTEND;VALUE=DATE:20270905
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Texas — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Texas — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Texas — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umich-2027-eastern-michigan@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:〽️ Michigan Football — vs Eastern Michigan — TBA
-DTSTART;VALUE=DATE:20270911
-DTEND;VALUE=DATE:20270912
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — vs Eastern Michigan — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umd-2027-james-madison@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:🐢 Maryland Football — vs James Madison — TBA
-DTSTART;VALUE=DATE:20270904
-DTEND;VALUE=DATE:20270905
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs James Madison — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umd-2027-youngstown-state@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:🐢 Maryland Football — vs Youngstown State — TBA
-DTSTART;VALUE=DATE:20270911
-DTEND;VALUE=DATE:20270912
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Youngstown State — TBA — Today at 9:00 AM
-TRIGGER:PT9H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:umd-2027-baylor@jackallege17-sports
-DTSTAMP:20261009T161232Z
-SUMMARY:🐢 Maryland Football — vs Baylor — TBA
-DTSTART;VALUE=DATE:20270918
-DTEND;VALUE=DATE:20270919
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — 5 days before
-TRIGGER:-P5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — 1 day before
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Baylor — TBA — Today at 9:00 AM
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
