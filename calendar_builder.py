@@ -26,17 +26,24 @@ for slug,name,t in [('spain','Spanish GP (Madrid)','20260913T1300Z'),('azerbaija
 timed('spirit-2026-10-03-shinden@jackallege17-sports','🐉 Team Spirit — vs ShindeN (ESL Pro League Season 24)','20261003T1130Z',180)
 timed('spirit-2026-10-04-parivision@jackallege17-sports','🐉 Team Spirit — vs PARIVISION (ESL Pro League Season 24)','20261004T0900Z',180)
 timed('spirit-2026-10-05-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24)','20261005T1600Z',180)
+# HLTV/PGL 27 Oct: 15:00 CET = 14:00 UTC (Detroit 10:00 EDT).
+timed('spirit-2026-10-27-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ (PGL Masters Bucharest 2026)','20261027T1400Z',180)
+timed('spirit-2026-11-11-fut@jackallege17-sports','🐉 Team Spirit — vs FUT (BLAST Rivals 2026 Season 2)','20261111T0800Z',180)
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z'),('umich-2026-09-26-iowa@jackallege17-sports','〽️ Michigan Football — vs Iowa','20260926T1930Z'),('umich-2026-10-03-minnesota@jackallege17-sports','〽️ Michigan Football — at Minnesota','20261003T1600Z')]: timed(u,s,t,240)
 timed('umich-2026-10-17-penn-state@jackallege17-sports','〽️ Michigan Football — vs Penn State','20261017T1930Z',240)
 timed('umich-2026-10-24-indiana@jackallege17-sports','〽️ Michigan Football — vs Indiana','20261024T1600Z',240)
-for y,slug,s in [('20261031','rutgers','at Rutgers'),('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
+timed('umich-2026-10-31-rutgers@jackallege17-sports','〽️ Michigan Football — at Rutgers','20261031T1630Z',240)
+for y,slug,s in [('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
 timed('umich-2026-11-28-ohio-state@jackallege17-sports','〽️ Michigan Football — at Ohio State','20261128T1700Z',240)
 
 # Maryland
 for u,s,t in [('umd-2026-09-12-uconn@jackallege17-sports','🐢 Maryland Football — at UConn','20260912T1930Z'),('umd-2026-09-19-virginia-tech@jackallege17-sports','🐢 Maryland Football — vs Virginia Tech','20260919T2330Z'),('umd-2026-09-26-ucla@jackallege17-sports','🐢 Maryland Football — vs UCLA','20260926T1730Z'),('umd-2026-10-03-nebraska@jackallege17-sports','🐢 Maryland Football — at Nebraska','20261003T2000Z'),('umd-2026-10-10-ohio-state@jackallege17-sports','🐢 Maryland Football — at Ohio State','20261010T2015Z'),('umd-2026-10-17-rutgers@jackallege17-sports','🐢 Maryland Football — vs Rutgers','20261017T1630Z')]: timed(u,s,t,240)
-for y,slug,s in [('20261031','illinois','vs Illinois'),('20261107','purdue','at Purdue'),('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
+timed('umd-2026-10-31-illinois@jackallege17-sports','🐢 Maryland Football — vs Illinois','20261031T1600Z',240)
+# Maryland official 26 Oct kickoff announcement: 12:30 EST = 17:30 UTC.
+timed('umd-2026-11-07-purdue@jackallege17-sports','🐢 Maryland Football — at Purdue','20261107T1730Z',240)
+for y,slug,s in [('20261114','wisconsin','vs Wisconsin'),('20261121','usc','at USC'),('20261128','penn-state','vs Penn State')]: day(f'umd-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'🐢 Maryland Football — {s} — TBA',y)
 
 # Tottenham men's first team: confirmed broadcast changes where announced; later PL fixtures provisional.
 UK=ZoneInfo('Europe/London')
@@ -48,7 +55,13 @@ def sp(y,h,o,home=True,c='Premier League',uid_y=None):
 for r in [('20260912','17:30','Everton',1,'Premier League'),('20260915','20:00','Liverpool',0,'Carabao Cup'),('20260919','12:30','Aston Villa',1,'Premier League'),('20261010','17:30','Manchester United',0,'Premier League'),('20261019','20:00','Coventry City',1,'Premier League'),('20261024','17:30','Chelsea',0,'Premier League'),('20261031','17:30','Crystal Palace',1,'Premier League'),('20261107','12:30','Leeds United',0,'Premier League'),('20261121','15:00','Ipswich Town',1,'Premier League')]: sp(*r)
 # Official November broadcast changes announced 21 Sep 2026. Preserve Sunderland's original UID after date change.
 sp('20261129','14:05','Sunderland',0,'Premier League','20261128')
-for r in [('20261202','20:00','Fulham',1),('20261205','15:00','Arsenal',1),('20261212','15:00','Hull City',0),('20261219','15:00','Liverpool',0),('20261226','15:00','AFC Bournemouth',1),('20270116','15:00','Leeds United',1),('20270123','15:00','Crystal Palace',0),('20270130','15:00','Sunderland',1),('20270206','15:00','Ipswich Town',0),('20270210','20:00','Manchester City',1),('20270220','15:00','Brighton & Hove Albion',0),('20270227','15:00','Liverpool',1),('20270303','20:00','AFC Bournemouth',0),('20270313','15:00','Nottingham Forest',1),('20270320','15:00','Everton',0),('20270410','15:00','Brentford',1),('20270417','15:00','Newcastle United',0),('20270424','15:00','Hull City',1),('20270501','15:00','Arsenal',0),('20270508','15:00','Chelsea',1),('20270515','15:00','Coventry City',0),('20270523','15:00','Manchester United',1),('20270530','16:00','Aston Villa',0)]: sp(*r)
+for r in [('20261226','15:00','AFC Bournemouth',1),('20270116','15:00','Leeds United',1),('20270123','15:00','Crystal Palace',0),('20270130','15:00','Sunderland',1),('20270206','15:00','Ipswich Town',0),('20270210','20:00','Manchester City',1),('20270220','15:00','Brighton & Hove Albion',0),('20270227','15:00','Liverpool',1),('20270303','20:00','AFC Bournemouth',0),('20270313','15:00','Nottingham Forest',1),('20270320','15:00','Everton',0),('20270410','15:00','Brentford',1),('20270417','15:00','Newcastle United',0),('20270424','15:00','Hull City',1),('20270501','15:00','Arsenal',0),('20270508','15:00','Chelsea',1),('20270515','15:00','Coventry City',0),('20270523','15:00','Manchester United',1),('20270530','16:00','Aston Villa',0)]: sp(*r)
+# Official December broadcast changes (19 Oct 2026); preserve original UIDs.
+sp('20261203','20:00','Fulham',1,'Premier League','20261202')
+sp('20261206','16:30','Arsenal',1,'Premier League','20261205')
+sp('20261214','20:00','Hull City',0,'Premier League','20261212')
+sp('20261219','17:30','Liverpool',0,'Premier League','20261219')
+
 # Official Tottenham fixture changes for the festive period (10 Sep 2026).
 # Preserve the original UIDs when the match date changes.
 sp('20261229','19:30','Brighton & Hove Albion',1,'Premier League','20261230')
