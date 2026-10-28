@@ -756,6 +756,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:spirit-2026-10-28-natus-vincere@jackallege17-sports
+DTSTAMP:20261028T044648Z
+SUMMARY:🐉 Team Spirit — vs Natus Vincere (PGL Masters Bucharest 2026)
+DTSTART:20261028T170000Z
+DTEND:20261028T200000Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs Natus Vincere (PGL Masters Bucharest 2026) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs Natus Vincere (PGL Masters Bucharest 2026) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs Natus Vincere (PGL Masters Bucharest 2026) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:umd-2026-10-31-illinois@jackallege17-sports
 DTSTAMP:20260921T120000Z
 SUMMARY:🐢 Maryland Football — vs Illinois
