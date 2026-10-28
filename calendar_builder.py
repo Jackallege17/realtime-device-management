@@ -28,7 +28,8 @@ timed('spirit-2026-10-04-parivision@jackallege17-sports','🐉 Team Spirit — v
 timed('spirit-2026-10-05-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ (ESL Pro League Season 24)','20261005T1600Z',180)
 # HLTV/PGL 27 Oct: 15:00 CET = 14:00 UTC (Detroit 10:00 EDT).
 timed('spirit-2026-10-27-mouz@jackallege17-sports','🐉 Team Spirit — vs MOUZ (PGL Masters Bucharest 2026)','20261027T1400Z',180)
-timed('spirit-2026-11-11-fut@jackallege17-sports','🐉 Team Spirit — vs FUT (BLAST Rivals 2026 Season 2)','20261111T0800Z',180)
+# BLAST official match page (checked 28 Oct): 11 Nov 2026 06:00 UTC, overriding stale HLTV 08:00 UTC.
+timed('spirit-2026-11-11-fut@jackallege17-sports','🐉 Team Spirit — vs FUT (BLAST Rivals 2026 Season 2)','20261111T0600Z',180)
 
 # Michigan
 for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan Football — vs Oklahoma','20260912T1600Z'),('umich-2026-09-19-utep@jackallege17-sports','〽️ Michigan Football — vs UTEP','20260919T1930Z'),('umich-2026-09-26-iowa@jackallege17-sports','〽️ Michigan Football — vs Iowa','20260926T1930Z'),('umich-2026-10-03-minnesota@jackallege17-sports','〽️ Michigan Football — at Minnesota','20261003T1600Z')]: timed(u,s,t,240)
