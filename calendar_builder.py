@@ -36,7 +36,9 @@ for u,s,t in [('umich-2026-09-12-oklahoma@jackallege17-sports','〽️ Michigan 
 timed('umich-2026-10-17-penn-state@jackallege17-sports','〽️ Michigan Football — vs Penn State','20261017T1930Z',240)
 timed('umich-2026-10-24-indiana@jackallege17-sports','〽️ Michigan Football — vs Indiana','20261024T1600Z',240)
 timed('umich-2026-10-31-rutgers@jackallege17-sports','〽️ Michigan Football — at Rutgers','20261031T1630Z',240)
-for y,slug,s in [('20261107','michigan-state','vs Michigan State'),('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
+timed('umich-2026-11-07-michigan-state@jackallege17-sports','〽️ Michigan Football — vs Michigan State','20261108T0030Z',240)
+# Michigan official: Nov 14 at Oregon and Nov 21 vs UCLA still TBA.
+for y,slug,s in [('20261114','oregon','at Oregon'),('20261121','ucla','vs UCLA')]: day(f'umich-2026-{y[4:6]}-{y[6:]}-{slug}@jackallege17-sports',f'〽️ Michigan Football — {s} — TBA',y)
 timed('umich-2026-11-28-ohio-state@jackallege17-sports','〽️ Michigan Football — at Ohio State','20261128T1700Z',240)
 
 # Maryland
