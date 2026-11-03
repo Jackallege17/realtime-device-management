@@ -999,24 +999,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umd-2026-11-14-wisconsin@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:🐢 Maryland Football — vs Wisconsin — TBA
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
+DTSTAMP:20261102T200000Z
+SUMMARY:🐢 Maryland Football — vs Wisconsin
+DTSTART:20261114T170000Z
+DTEND:20261114T210000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Wisconsin — TBA — 5 days before
+DESCRIPTION:🐢 Maryland Football — vs Wisconsin — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Wisconsin — TBA — 1 day before
+DESCRIPTION:🐢 Maryland Football — vs Wisconsin — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Wisconsin — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:🐢 Maryland Football — vs Wisconsin — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
