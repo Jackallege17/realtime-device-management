@@ -977,24 +977,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:umich-2026-11-14-oregon@jackallege17-sports
-DTSTAMP:20260921T120000Z
-SUMMARY:〽️ Michigan Football — at Oregon — TBA
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
+DTSTAMP:20261103T003956Z
+SUMMARY:〽️ Michigan Football — at Oregon
+DTSTART:20261114T203000Z
+DTEND:20261115T003000Z
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Oregon — TBA — 5 days before
+DESCRIPTION:〽️ Michigan Football — at Oregon — 5 days before
 TRIGGER:-P5D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Oregon — TBA — 1 day before
+DESCRIPTION:〽️ Michigan Football — at Oregon — 1 day before
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:〽️ Michigan Football — at Oregon — TBA — Today at 9:00 AM
-TRIGGER:PT9H
+DESCRIPTION:〽️ Michigan Football — at Oregon — 2 hours before
+TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
