@@ -2517,4 +2517,27 @@ DESCRIPTION:🏎️ F1 — Abu Dhabi GP — Race — TBA — Today at 9:00 AM
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:spirit-2026-11-15-furia-blast-rivals-final@jackallege17-sports
+DTSTAMP:20261114T000000Z
+SUMMARY:🐉 Team Spirit — vs FURIA (BLAST Rivals 2026 Season 2 — Grand final)
+DTSTART:20261115T090000Z
+DTEND:20261115T120000Z
+DESCRIPTION:BLAST Rivals 2026 Season 2 Grand final (Bo5). HLTV confirmed Spirit vs FURIA on 15 November 2026 at 09:00 UTC. https://www.hltv.org/matches/2400208/spirit-vs-furia-blast-rivals-2026-season-2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs FURIA (BLAST Rivals 2026 Season 2 — Grand final) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs FURIA (BLAST Rivals 2026 Season 2 — Grand final) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🐉 Team Spirit — vs FURIA (BLAST Rivals 2026 Season 2 — Grand final) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
 END:VCALENDAR
