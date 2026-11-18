@@ -1169,7 +1169,7 @@ TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:🐢 Maryland Football — vs Penn State — 9 AM on game day
+DESCRIPTION:🐢 Maryland Football — vs Penn State — 2 hours before
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
