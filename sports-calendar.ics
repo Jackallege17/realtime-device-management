@@ -2584,4 +2584,70 @@ DESCRIPTION:🐉 Team Spirit — vs FURIA (BLAST Rivals 2026 Season 2 — Grand 
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-08-22-brentford@jackallege17-sports
+DTSTAMP:20261118T210000Z
+SUMMARY:⚽ Tottenham — at Brentford (Premier League)
+DTSTART:20260822T163000Z
+DTEND:20260822T184500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brentford (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brentford (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Brentford (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-08-29-newcastle-united@jackallege17-sports
+DTSTAMP:20261118T210000Z
+SUMMARY:⚽ Tottenham — vs Newcastle United (Premier League)
+DTSTART:20260829T163000Z
+DTEND:20260829T184500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Newcastle United (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Newcastle United (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — vs Newcastle United (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spurs-2026-09-05-nottingham-forest@jackallege17-sports
+DTSTAMP:20261118T210000Z
+SUMMARY:⚽ Tottenham — at Nottingham Forest (Premier League)
+DTSTART:20260905T140000Z
+DTEND:20260905T161500Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Nottingham Forest (Premier League) — 5 days before
+TRIGGER:-P5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Nottingham Forest (Premier League) — 1 day before
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham — at Nottingham Forest (Premier League) — 2 hours before
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
 END:VCALENDAR
